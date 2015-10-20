@@ -1,0 +1,530 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body,html {
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    font:24px/1.4 "微软雅黑","华文细黑";
+}
+a {
+    text-decoration: none;
+}
+img {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.h {
+  display: none;
+}
+.s {
+  display: block;
+}
+#startMenuWrapper{
+  background: #152042;
+  width: 640px;
+  margin:0 auto;
+  height:100%;
+  background:url(../resources/img/menu.bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu-title {
+    position: absolute;
+    width: 100%;
+}
+.menu-main {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+#play {
+    padding: 10px 18px;
+    display: inline-block;
+    border: 5px solid #fff;
+    border-radius: 66px;
+    font-size: 30px;
+    color:#fff;
+    margin-top:8px;
+    padding-left: 46px;
+    background:#182752 url(../resources/img/menu.btn.arrow.png) no-repeat 15px center;
+}
+.menu-aside{
+  color: #fff;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 58px;
+}
+
+
+#gameAreaWrapper{
+  height: 100%;
+  background: #0c1531;
+}
+
+.menu-circle {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.circle-area {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-user-head {
+  position: absolute;
+  width:110px;
+  height:110px;
+  left: 50%;
+  top:50%;
+  margin-left: -55px;
+  margin-top:-55px;
+}
+
+.circle-bg {
+  position: relative;
+}
+
+#gameAreaWrapper {
+
+}
+
+.role-player {
+/*  width: 108px;
+  height: 108px;*/
+  border: 7px solid transparent;
+  position: absolute;
+/*  top: 50%;
+  left: 50%;
+  margin-left:-54px;
+  margin-top:-54px;*/
+  border-radius: 100%;
+}
+
+.player-hand {
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:-54px;
+  margin-top:-54px;
+}
+
+.game-time {
+  width: 106px;
+  height: 106px;
+  position: fixed;
+  top:20px;
+  right: 20px;
+  color: #363d51;
+  border-radius: 100%;
+  background:rgba(41,46,57,0.2);
+  line-height: 106px;
+  text-align: center;
+  z-index: 2;
+}
+
+.role-emeny {
+  border-radius: 100%;
+  width: 165px;
+  height: 165px;
+  border:5px solid #fff;
+  position: absolute;
+  top:0;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.game-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left: 0px;
+  background: url(../resources/img/game.bg.png);
+  overflow: hidden;
+}
+
+.type-1 {
+  background-image: url(../resources/img/enemy_1.png);
+}
+.type-2 {
+  background-image: url(../resources/img/enemy_2.png);
+}
+.type-3 {
+  background-image: url(../resources/img/enemy_3.png);
+}
+.type-4 {
+  background-image: url(../resources/img/enemy_4.png);
+}
+.type-5 {
+  background-image: url(../resources/img/enemy_5.png);
+}
+.type-6 {
+  background-image: url(../resources/img/enemy_6.png);
+}
+.type-7 {
+  background-image: url(../resources/img/enemy_7.png);
+}
+.type-8{
+  background-image: url(../resources/img/enemy_8.png);
+}
+.type-9 {
+  background-image: url(../resources/img/enemy_9.png);
+}
+.type-10 {
+  background-image: url(../resources/img/enemy_10.png);
+}
+
+.color-1 {
+  border-color: #ca8225;
+  background-color: #fa8a2a;
+}
+.color-2 {
+  border-color: #48909f;
+  background-color: #60dff9;
+}
+.color-3 {
+  border-color: #d8206c;
+  background-color: #ff76b1;
+}
+.color-4 {
+  border-color: #0278b3;
+  background-color: #3b79ef;
+}
+.color-5 {
+  border-color: #784bd2;
+  background-color: #986bf1;
+}
+.color-6 {
+  border-color: #b80406;
+  background-color: #fb4446;
+}
+.color-7 {
+  border-color: #5ae62f;
+  background-color: #9ee76d;
+}
+.color-8 {
+  border-color: #f39d83;
+  background-color: #fcc1af;
+}
+.color-9 {
+  border-color: #bf5182;
+  background-color: #ff80b9;
+}
+.color-10 {
+  border-color: #d6c954;
+  background-color: #f9ed7f;
+}
+
+.black_hole {
+  width: 200px;
+  height: 200px;
+  background: url(../resources/img/blackhole.png) no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  -webkit-animation: rotate2 10s linear infinite;
+  -moz-animation: rotate2 10s linear infinite;
+  -o-animation: rotate2 10s linear infinite;
+  animation: rotate2 10s linear infinite;
+}
+
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+}
+#success .layer-con {
+  width: 554px;
+  height: 632px;
+  background:url(../resources/img/layer.success.png) no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -277px;
+  margin-top: -277px;
+  color: #fff;
+}
+#success .layer-con h5 {
+  font-size: 36px;
+  line-height: 109px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-weight: normal;
+}
+#success .layer-con h6{
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 17px;
+  text-align: center;
+}
+.success-main {
+  width: 488px;
+  margin:0 auto;
+}
+.res-tit {
+  font-size: 24px;
+  color: #c5d1f8;
+  padding-right: 10px;
+}
+.res-code span{
+  display: inline-block;
+  width: 138px;
+  height: 36px;
+  line-height: 36px;
+  background: #353f5e;
+  text-align: center;
+}
+.success-btn {
+  padding-top: 34px;
+}
+.btn-group {
+  text-align: center;
+  padding-top: 13px;
+}
+.btn-group:first-child a {
+  color: #fff;
+  font-size: 30px;
+  border:2px solid #fff;
+  width: 244px;
+  padding:10px 0;
+  border-radius: 30px;
+  display: inline-block;
+  margin:0 4px;
+}
+#get-ticket {
+  width: 504px;
+  display: inline-block;
+  font-size: 30px;
+  background:#fFf;
+  color: #131e43;
+  border:2px solid #fff;
+  border-radius: 30px;
+  padding:10px 0;
+}
+#success .type-1 {
+  width: 360px;
+  height: 360px;
+  left: -100px;
+  top: 60px;
+}
+#success .type-5 {
+  width: 55px;
+  height: 55px;
+  left: 254px;
+  top: 60px;
+}
+#success .type-6 {
+  width: 100px;
+  height: 100px;
+  left: 470px;
+  top: -34px;
+}
+#success .type-7 {
+  width: 252px;
+  height: 252px;
+  left: 292px;
+  top: auto;
+  bottom: -128px;
+}
+
+#share .tips {
+  color: #fff;
+  text-align: right;
+}
+.share-hand {
+  padding-left: 40px;
+}
+.tips {
+  display: inline-block;
+  position: absolute;
+  top:86px;
+  right:30px;
+}
+#share .type-8 {
+  width: 328px;
+  height: 328px;
+  left: -55px;
+  top: auto;
+  bottom: 206px;
+}
+#share .type-10 {
+  width: 180px;
+  height: 180px;
+  left: 200px;
+  top: auto;
+  bottom: -24px;
+}
+#share .type-1 {
+  width: 50px;
+  height: 50px;
+  left: auto;
+  right: 126px;
+  top: auto;
+  border-width: 2px;
+  bottom: 214px;
+}
+
+#getTicket {
+  background: url(../resources/img/get.ticket.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.back-btn {
+  position: absolute;
+  bottom: 9px;
+  left: 28px;
+  width: 183px;
+  height: 107px;
+}
+.bubble {
+  width: 554px;
+  padding:5px 0;
+  height: 214px;
+  background: url(../resources/img/bubble.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left:-277px;
+  top:-230px;
+}
+.bubble td {
+  vertical-align: top;
+}
+.bubble table {
+  width: 520px;
+  margin:0px auto;
+}
+.bubble .num {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 26px;
+  display: inline-block;
+  border:2px solid #fff;
+  border-radius: 100%;
+  font-size: 22px;
+  font-family: "arial";
+  margin-right: 4px;
+}
+.hand-arrow {
+  position: absolute;
+  top: 93px;
+  left: 78px;
+}
+.player-hand .btn-group a {
+  color: #fff;
+  font-size: 30px;
+  border:5px solid #fff;
+  padding:10px 0;
+  border-radius: 30px;
+  display: inline-block;
+  margin:0 4px;
+  position: absolute;
+  top: 226px;
+  left: 50%;
+  width: 260px;
+  margin-left: -130px;
+}
+.player-hand .btn-group a span {
+  padding-left: 60px;
+  background: url(../resources/img/okey.png) no-repeat left center;
+}
+.game-rule {
+  width: 600px;
+  bottom: 36px;
+  position: absolute;
+  left: 50%;
+  margin-left:-300px;
+  text-align: center;
+  color: #757f9f;
+  padding-top: 26px;
+  border-top: 1px solid #757f9f;
+}
+
+.role-player {
+  animation-fill-mode: both;
+}
+
+
+
+
+
+
+
+/* ihpone4 */
+@media (max-height: 900px){
+  .menu-main img,.circle-area,#success .type-7,#success .type-1,.hand-arrow{
+    zoom:0.8;
+  }
+  #okey-letsgo {
+    zoom:0.85;
+  }
+  #share .type-10 {
+    left: 256px;
+  }
+  .hand-arrow {
+    position: absolute;
+    top: 109px;
+    left: 108px;
+  }
+  .menu-aside {
+    padding-bottom: 20px;
+  }
+}
+
+/* loading(begin) */
+.loading { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background:rgba(0,0,0,0.8);}
+.cell { display: inline-block; position: absolute; top: 50%; left: 50%; margin-left: -32px; margin-top:-44px;}
+.loading header { padding: 24px 0; background: #fff;}
+.logo-center { color: #fff;}
+.timer-loader:not(:required){ border: 6px solid #e9ab34; }
+.timer-loader:not(:required)::after { background: #ffec30;}
+.timer-loader:not(:required)::before { background: #ffec30;}
+.cell { width: 64px; text-align: center;}
+/* loading(end) */
+
+/* ihpone6 */
+@media (min-height: 1020px){
+
+}
+
+@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes rotate{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(359deg)}}
+@-o-keyframes rotate{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(359deg)}}
+@keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}
+@-webkit-keyframes rotate2{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes rotate2{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(359deg)}}
+@-o-keyframes rotate2{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(359deg)}}
+@keyframes rotate2{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}
