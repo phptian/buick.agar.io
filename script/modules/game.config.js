@@ -7,7 +7,7 @@ define(["resource"],function(res){
     gameConfig = {
 
         // 时间设置
-        gameTime : 120, //游戏时间120秒
+        gameTime : 100, //游戏时间120秒
         timeScore : 1, //时间奖励1秒1分
 
         // 地图设置
@@ -20,14 +20,14 @@ define(["resource"],function(res){
 
         // AI设置
         aiAmount : 10,  //初始AI数量
-        aiNutrition : 0.1,  //吃了之后体积增加10%
+        aiNutrition : 0.04,  //吃了之后体积增加10%
         aiScore : 30, //吃AI分数
 
         // 食物设置
         foodAmount : 100, //初始食物数量
         foodSize : 50,   //初始食物大小
         addfood : 3,    //每1秒增加食物数量
-        foodNutrition : 0.02,  //吃了之后体积增加2%
+        foodNutrition : 0.004,  //吃了之后体积增加2%
         foodScore : 10,  //吃食物后分数
 
         // 黑洞设置

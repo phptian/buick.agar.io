@@ -72,7 +72,7 @@ define(["gameConfig","transit","resource","tools"],function(cfg,transit,resource
         }else {
           if(Math.sqrt((uL-tL)*(uL-tL)-(uT-tT)*(uT-tT)) < user.width()/2 && $(this).attr("id").split("_")[0] == "black"){
             user.fadeOut();
-            over(par,foot,Computer)
+            over(par)
             clearInterval(_this.playerTimer)
           }
         }
