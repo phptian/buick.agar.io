@@ -37,7 +37,7 @@ define(["gameConfig","player","transit","tools","resource"],function(cfg,Player,
 
             var gameTime = parseInt(cfg.gameTime);
             $(".game-time").text(gameTime+"秒");
-            _this.gt = setInterval(function(){
+            var gt = setInterval(function(){
               gameTime -= 1;
               if($("#info .time").length>0){
                 $("#info .time").text(cfg.gameTime-gameTime);
@@ -215,7 +215,6 @@ define(["gameConfig","player","transit","tools","resource"],function(cfg,Player,
               $(".badge").attr("src",res.src.level_6);
               break;
           }
-          clearInterval(_this.gt);
           $("#success").show();
         }
 

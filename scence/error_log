@@ -1,0 +1,2 @@
+[20-Oct-2015 12:02:46 UTC] PHP Warning:  Missing argument 2 for vpost(), called in /home/p1882/public_html/buick/scence/wxauth.php on line 16 and defined in /home/p1882/public_html/buick/scence/wxauth.php on line 33
+[20-Oct-2015 12:02:46 UTC] PHP Warning:  Missing argument 2 for vpost(), called in /home/p1882/public_html/buick/scence/wxauth.php on line 18 and defined in /home/p1882/public_html/buick/scence/wxauth.php on line 33

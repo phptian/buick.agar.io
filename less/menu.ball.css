@@ -1,6 +1,7 @@
 .menu-balls {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .menu-balls i {
     display: block;
