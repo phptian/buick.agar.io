@@ -11,22 +11,22 @@ define(["resource"],function(res){
         timeScore : 1, //时间奖励1秒1分
 
         // 地图设置
-        mapSize : 4, //地图尺寸为15倍视窗
+        mapSize : 2, //地图尺寸为15倍视窗
 
         // 主角设置
         userPlayerSize : 108, //初始主角小球大小
         userPlayerHeader : res.src.playerHead, //设置主角头像,如有修改请前往resource.js
-        userPlayerSpeed : 20,  //初始主角速度
+        userPlayerSpeed : 10,  //初始主角速度
 
         // AI设置
-        aiAmount : 10,  //初始AI数量
+        aiAmount : 4,  //初始AI数量
         aiNutrition : 0.04,  //吃了之后体积增加10%
         aiScore : 30, //吃AI分数
 
         // 食物设置
-        foodAmount : 100, //初始食物数量
+        foodAmount : 20, //初始食物数量
         foodSize : 50,   //初始食物大小
-        addfood : 3,    //每1秒增加食物数量
+        addfood : 1,    //每1秒增加食物数量
         foodNutrition : 0.004,  //吃了之后体积增加2%
         foodScore : 10,  //吃食物后分数
 
