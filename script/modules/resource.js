@@ -10,7 +10,7 @@ define(function(){
         bubble : _PUBLIC_ + "bubble.png",
 
         /** player **/
-        playerHead : userImg,
+        playerHead : userImg ? userImg : _PUBLIC_ + "test.user.head.png",
 
         /** enemy **/
         enemy_1 : _PUBLIC_ + "enemy_1.png",

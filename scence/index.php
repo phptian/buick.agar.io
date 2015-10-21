@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="../less/menu.ball.css" />
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <script type="text/javascript">
-  var userImg = "<?php echo $headimgUrl?>";
+
+  var userImg = "<?php echo $_COOKIE['headimgurl']?>";
+
   var phoneWidth = parseInt(window.screen.width);
   var phoneScale = phoneWidth / 640;
   var ua = navigator.userAgent;
@@ -258,7 +260,7 @@
       </table>
       <div class="success-btn">
         <div class="btn-group">
-          <a href="javascript:;" onclick="window.loaction.reload()" id="again">再次挑战</a>
+          <a href="index.html" id="again">再次挑战</a>
           <a href="javascript:;" id="shareNow">分享至朋友圈</a>
         </div>
         <div class="btn-group">
@@ -282,7 +284,7 @@
               <p>体验现代舞女神世界</p>
             </td>
             <td>
-              <img src="../resources/img/hand.png" class="share-hand" alt="">
+              <!-- <img src="../resources/img/hand.png" class="share-hand" alt=""> -->
             </td>
           </tr>
         </table>

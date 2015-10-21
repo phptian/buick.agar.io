@@ -185,6 +185,7 @@ define(["gameConfig","player","transit","tools","resource"],function(cfg,Player,
         gameOver : function(par){
           var _this = par;
           clearInterval(_this.addFoodTimer);
+          clearInterval(_this.playerTimer);
           var foodNum = $("#info .food").text() || 0;
           var computerNum = $("#info .computer").text() || 0;
           var time = $("#info .time").text() || 0;
